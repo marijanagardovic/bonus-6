@@ -28,6 +28,7 @@ body {
     background-color: var(--very-pale-blue);
     background-image: url(images/bg-pattern.svg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header {
@@ -56,4 +57,88 @@ header p {
     line-height: 20px;
     text-align: center;
     color: var(--text-color);
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 540px;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 4em;
+    border-radius: 7px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 2.5em;
+}
+
+.card-views p {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.cost {
+    display: flex;
+    transform: translateY(-40%);
+}
+
+.per-month {
+    color: var(--text-color);
+    margin-left: 0.3em;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.price, .dolar {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+
+    letter-spacing: -1px;
+    color: var(--dark-destaurated-blue);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5em;
+}
+
+.slider input[type="range"] {
+    width: 100%;
+}
+
+.myrange {
+    appearance: none;
+    background-color: var(--strong-cyan);
+    border-radius: 5px;
+    outline: none;
+    height: 8px;
+}
+
+.myrange::-webkit-slider-thumb {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: var(--strong-cyan);
+    border-radius: 50%;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
 }
